@@ -17,6 +17,7 @@ moused_page::moused_page(QWidget *parent, sysadm_client *core) : PageWidget(pare
   ui->slider_acc_linear->setRange(0,100);
   ui->slider_drift->setRange(0,1000);
   ui->combo_resolution->clear();
+    ui->combo_resolution->addItem(tr("Defalut"), "default");
     ui->combo_resolution->addItem(tr("Low"), "low");
     ui->combo_resolution->addItem(tr("Medium-Low"), "medium-low");
     ui->combo_resolution->addItem(tr("Medium-High"), "medium-high");
